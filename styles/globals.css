@@ -30,31 +30,6 @@
 }
 
 @layer base {
-  :root {
-    --purple-60: #7a00ff;
-    --purple-65: #8a1aff;
-    --purple-70: #9a33ff;
-    --purple-75: #aa4dff;
-    --purple-90: #e4ccff;
-    --purple-95: #f1e5ff;
-    --purple-97: #f7f0ff;
-    --purple-99: #fcfaff;
-
-    /* HeroUI Primary Color */
-    --heroui-primary: var(--purple-60);
-    --heroui-primary-50: var(--purple-99);
-    --heroui-primary-100: var(--purple-97);
-    --heroui-primary-200: var(--purple-95);
-    --heroui-primary-300: var(--purple-90);
-    --heroui-primary-400: var(--purple-75);
-    --heroui-primary-500: var(--purple-70);
-    --heroui-primary-600: var(--purple-65);
-    --heroui-primary-700: var(--purple-60);
-    --heroui-primary-800: var(--purple-60);
-    --heroui-primary-900: var(--purple-60);
-    --heroui-primary-foreground: #ffffff;
-  }
-
   body {
     @apply flex min-h-dvh flex-col overflow-x-hidden bg-black text-white;
   }
@@ -66,26 +41,5 @@
   }
   button {
     @apply cursor-pointer;
-  }
-
-  /* HeroUI Primary Color Override */
-  [data-heroui-color='primary'] {
-    --heroui-primary: var(--purple-60);
-    --heroui-primary-50: var(--purple-99);
-    --heroui-primary-100: var(--purple-97);
-    --heroui-primary-200: var(--purple-95);
-    --heroui-primary-300: var(--purple-90);
-    --heroui-primary-400: var(--purple-75);
-    --heroui-primary-500: var(--purple-70);
-    --heroui-primary-600: var(--purple-65);
-    --heroui-primary-700: var(--purple-60);
-    --heroui-primary-800: var(--purple-60);
-    --heroui-primary-900: var(--purple-60);
-    --heroui-primary-foreground: #ffffff;
-  }
-
-  button[data-heroui-color='primary'] {
-    background-color: var(--purple-60) !important;
-    color: #ffffff !important;
   }
 }
