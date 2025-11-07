@@ -1,11 +1,12 @@
-import "@/styles/globals.css";
-import { Metadata } from "next";
-import clsx from "clsx";
-import { Providers } from "./providers";
-import { fontUrbanist } from "@/config/fonts";
+import '@/styles/globals.css';
+import { Metadata } from 'next';
+import clsx from 'clsx';
+import { Providers } from './providers';
+import { fontUrbanist } from '@/config/fonts';
+import LayouBase from '@/containers/layout/base';
 
 export const metadata: Metadata = {
-  title: "estatein",
+  title: 'estatein',
 };
 
 export default function RootLayout({
@@ -18,12 +19,11 @@ export default function RootLayout({
       <head />
       <body
         className={clsx(
-          "min-h-screen text-foreground bg-background font-sans antialiased",
           fontUrbanist.variable,
         )}
       >
         <Providers>
-          <div>hi</div>
+          <LayouBase>{children}</LayouBase>
         </Providers>
       </body>
     </html>
