@@ -1,0 +1,48 @@
+@import 'tailwindcss';
+
+@theme {
+  --color-primary-60: var(--purple-60);
+  --color-primary-65: var(--purple-65);
+  --color-primary-70: var(--purple-70);
+  --color-primary-75: var(--purple-75);
+  --color-primary-90: var(--purple-90);
+  --color-primary-95: var(--purple-95);
+  --color-primary-97: var(--purple-97);
+  --color-primary-99: var(--purple-99);
+  --color-white-90: #e4e4e7;
+  --color-white-95: #f1f1f3;
+  --color-white-97: #f7f7f8;
+  --color-white-99: #fcfcfd;
+  --color-grey-08: #141414;
+  --color-grey-10: #1a1a1a;
+  --color-grey-15: #262626;
+  --color-grey-20: #333333;
+  --color-grey-30: #4d4d4d;
+  --color-grey-40: #666666;
+  --color-grey-50: #808080;
+  --color-grey-60: #999999;
+  --color-primary: var(--purple-60);
+  --color-gray: var(--grey-50);
+}
+
+@utility container {
+  @apply mx-auto px-4 max-w-7xl;
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply flex min-h-dvh flex-col overflow-x-hidden bg-black text-white;
+  }
+  input {
+    @apply outline-none;
+  }
+  main {
+    @apply flex h-full flex-1 flex-col gap-5 py-6;
+  }
+  button {
+    @apply cursor-pointer;
+  }
+}
