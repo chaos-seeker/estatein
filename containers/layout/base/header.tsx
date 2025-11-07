@@ -14,9 +14,11 @@ export function Header() {
             height={30}
           />
         </Link>
-        <Button color="primary" variant="solid">
-          explore
-        </Button>
+        <Link href="/explore">
+          <Button variant="solid" color="primary">
+            explore
+          </Button>
+        </Link>
       </div>
     </header>
   );

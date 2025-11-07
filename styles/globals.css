@@ -1,14 +1,15 @@
 @import 'tailwindcss';
+@config '../tailwind.config.ts';
 
 @theme {
-  --color-primary-60: var(--purple-60);
-  --color-primary-65: var(--purple-65);
-  --color-primary-70: var(--purple-70);
-  --color-primary-75: var(--purple-75);
-  --color-primary-90: var(--purple-90);
-  --color-primary-95: var(--purple-95);
-  --color-primary-97: var(--purple-97);
-  --color-primary-99: var(--purple-99);
+  --color-primary-60: #7a00ff;
+  --color-primary-65: #8a1aff;
+  --color-primary-70: #9a33ff;
+  --color-primary-75: #aa4dff;
+  --color-primary-90: #e4ccff;
+  --color-primary-95: #f1e5ff;
+  --color-primary-97: #f7f0ff;
+  --color-primary-99: #fcfaff;
   --color-white-90: #e4e4e7;
   --color-white-95: #f1f1f3;
   --color-white-97: #f7f7f8;
@@ -21,8 +22,8 @@
   --color-grey-40: #666666;
   --color-grey-50: #808080;
   --color-grey-60: #999999;
-  --color-primary: var(--purple-60);
-  --color-gray: var(--grey-50);
+  --color-primary: #7a00ff;
+  --color-gray: #808080;
 }
 
 @utility container {
@@ -37,7 +38,7 @@
     @apply outline-none;
   }
   main {
-    @apply flex h-full flex-1 flex-col gap-5 py-6;
+    @apply flex flex-1 items-center justify-center;
   }
   button {
     @apply cursor-pointer;
